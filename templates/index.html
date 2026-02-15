@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"], select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Prediction</h1>
+        <form method="post">
+            <label for="model">Select Model:</label>
+            <select id="model" name="model" required>
+                <option value="Logistic Regression">Logistic Regression</option>
+                <option value="K-Nearest Neighbors">K-Nearest Neighbors</option>
+                <option value="Decision Tree">Decision Tree</option>
+                <option value="Random Forest">Random Forest</option>
+                <option value="Support Vector Machine">Support Vector Machine</option>
+            </select>
+            
+            <label for="temperature">Temperature:</label>
+            <input type="number" step="any" id="temperature" name="temperature" required>
+            
+            <label for="humidity">Humidity:</label>
+            <input type="number" step="any" id="humidity" name="humidity" required>
+            
+            <label for="wind_speed">Wind Speed:</label>
+            <input type="number" step="any" id="wind_speed" name="wind_speed" required>
+            
+            <label for="precipitation">Precipitation (%):</label>
+            <input type="number" step="any" id="precipitation" name="precipitation" required>
+            
+            <label for="cloud_cover">Cloud Cover:</label>
+            <select id="cloud_cover" name="cloud_cover" required>
+                <option value="0">Partly Cloudy</option>
+                <option value="1">Clear</option>
+                <option value="2">Overcast</option>
+                <option value="3">Cloudy</option>
+            </select>
+            
+            <label for="uv_index">UV Index:</label>
+            <input type="number" step="any" id="uv_index" name="uv_index" required>
+            
+            <label for="season">Season:</label>
+            <select id="season" name="season" required>
+                <option value="0">Winter</option>
+                <option value="1">Spring</option>
+                <option value="2">Summer</option>
+                <option value="3">Autumn</option>
+            </select>
+            
+            <label for="visibility">Visibility (km):</label>
+            <input type="number" step="any" id="visibility" name="visibility" required>
+            
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <option value="0">Inland</option>
+                <option value="1">Mountain</option>
+                <option value="2">Coastal</option>
+            </select>
+            
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
