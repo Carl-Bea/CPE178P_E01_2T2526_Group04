@@ -45,7 +45,7 @@ If you're passionate about data science, machine learning, or web development, f
 
 ## About the Author 🌟
 
-This project is maintained by a team of dedicated developers and data scientists who are committed to making machine learning more accessible and relevant in real-world applications. Our goal is to empower individuals with the tools and knowledge to leverage technology for solving everyday challenges.
+This project is maintained by a team of dedicated developers and data scientists who are committed to making machine learning more accessible and relevant in real-world applications, our goal is to empower individuals with the tools and knowledge to leverage technology for solving everyday challenges.
 
 ---
 
